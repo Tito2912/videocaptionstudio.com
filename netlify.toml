@@ -31,11 +31,8 @@
       upgrade-insecure-requests
     """
 
-    # Helpful preconnects (Netlify allows multiple Link headers)
-    Link = "<https://www.googletagmanager.com>; rel=preconnect; crossorigin"
-    Link = "<https://www.google-analytics.com>; rel=preconnect; crossorigin"
-    Link = "<https://i.ytimg.com>; rel=preconnect"
-    Link = "<https://www.youtube-nocookie.com>; rel=preconnect; crossorigin"
+	    # Helpful preconnects (single "Link" header with multiple values)
+	    Link = "<https://www.googletagmanager.com>; rel=preconnect; crossorigin, <https://www.google-analytics.com>; rel=preconnect; crossorigin, <https://i.ytimg.com>; rel=preconnect, <https://www.youtube-nocookie.com>; rel=preconnect; crossorigin"
 
 # -------- Long-term immutable cache for static assets
 [[headers]]
