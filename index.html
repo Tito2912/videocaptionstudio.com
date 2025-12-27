@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+
+  <title>VideoCaptionStudio — Fast AI captions & smart editing for CapCut (Web/Desktop/Mobile)</title>
+  <meta name="description" content="Create scroll-stopping videos faster with AI auto-captions, TTS voices, auto resize/reframe and templates in CapCut. Try online or get CapCut Pro via our partner link." />
+
+  <!-- Canonical & hreflang -->
+  <link rel="canonical" href="https://videocaptionstudio.com/" />
+  <link rel="alternate" href="https://videocaptionstudio.com/" hreflang="x-default" />
+  <link rel="alternate" href="https://videocaptionstudio.com/" hreflang="en" />
+  <link rel="alternate" href="https://videocaptionstudio.com/fr/" hreflang="fr-FR" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="VideoCaptionStudio" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:title" content="VideoCaptionStudio — Fast AI captions & smart editing for CapCut" />
+  <meta property="og:description" content="AI auto-captions, TTS voices, smart resize & templates. Try CapCut online or upgrade to Pro via our partner link." />
+  <meta property="og:url" content="https://videocaptionstudio.com/" />
+  <meta property="og:image" content="https://videocaptionstudio.com/images/capture-hero.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="VideoCaptionStudio — Fast AI captions & smart editing for CapCut" />
+  <meta name="twitter:description" content="AI auto-captions, TTS voices, smart resize & templates. Try online or get Pro via our partner link." />
+  <meta name="twitter:image" content="https://videocaptionstudio.com/images/capture-hero.png" />
+
+  <!-- Preconnects (keep lean for CWV) -->
+  <link rel="preconnect" href="https://i.ytimg.com" crossorigin />
+  <link rel="preconnect" href="https://www.youtube-nocookie.com" crossorigin />
+  <link rel="dns-prefetch" href="//i.ytimg.com" />
+  <link rel="dns-prefetch" href="//www.youtube-nocookie.com" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/styles.css" />
+
+  <!-- Favicons / Manifest (expected in /images) -->
+  <link rel="icon" href="/images/favicon.ico" sizes="any" />
+  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+  <link rel="manifest" href="/images/site.webmanifest" />
+
+  <!-- JSON-LD: Organization (publisher = E-Com Shop operating videocaptionstudio.com) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "E-Com Shop",
+    "legalName": "E-Com Shop",
+    "url": "https://videocaptionstudio.com/",
+    "brand": { "@type": "Brand", "name": "VideoCaptionStudio" },
+    "logo": "https://videocaptionstudio.com/images/videocaptionstudio-logo.png",
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "email": "contact.ecomshopfrance@gmail.com",
+      "availableLanguage": ["en","fr"]
+    }]
+  }
+  </script>
+
+  <!-- JSON-LD: SoftwareApplication (CapCut/CapCut Pro) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "CapCut",
+    "applicationCategory": "VideoEditorApplication",
+    "operatingSystem": "Web, Windows, macOS, iOS, Android",
+    "publisher": { "@type": "Organization", "name": "Bytedance Pte. Ltd.", "url": "https://www.capcut.com/" },
+    "url": "https://www.capcut.com/",
+    "softwareRequirements": "Modern browser or supported desktop/mobile OS",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "category": "Free"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: Breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://videocaptionstudio.com/"
+    }]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQ (matches section below) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"Is CapCut free and what does Pro add?",
+        "acceptedAnswer":{"@type":"Answer","text":"CapCut offers a free plan with powerful editing features on Web, Windows, macOS, iOS and Android. CapCut Pro unlocks advanced assets, additional AI features, premium templates and higher usage limits. Availability and benefits can vary by region and time."}
+      },
+      {
+        "@type":"Question",
+        "name":"Does CapCut support AI auto-captions and multiple languages?",
+        "acceptedAnswer":{"@type":"Answer","text":"Yes. CapCut provides AI auto-captions/subtitles in multiple languages and styles, and supports editing and exporting captions."}
+      },
+      {
+        "@type":"Question",
+        "name":"Can I use AI text-to-speech voices in CapCut?",
+        "acceptedAnswer":{"@type":"Answer","text":"CapCut includes text-to-speech with multiple voices and accents. Availability may vary by region and updates."}
+      },
+      {
+        "@type":"Question",
+        "name":"Is there a web version?",
+        "acceptedAnswer":{"@type":"Answer","text":"Yes. CapCut has a browser-based editor so you can edit without installing desktop apps."}
+      },
+      {
+        "@type":"Question",
+        "name":"What about background removal and smart reframing?",
+        "acceptedAnswer":{"@type":"Answer","text":"CapCut provides AI background removal/cutout and auto resize/reframe to quickly adapt formats for social platforms."}
+      },
+      {
+        "@type":"Question",
+        "name":"Are you affiliated with CapCut?",
+        "acceptedAnswer":{"@type":"Answer","text":"VideoCaptionStudio is a non-official partner site. We may earn a commission if you purchase CapCut Pro through our sponsored link, at no extra cost to you."}
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Language suggestion banner (non-blocking) -->
+  <div id="lang-suggest" class="lang-suggest" role="region" aria-live="polite" hidden>
+    <p>We detected your browser prefers French. <a href="/fr/" rel="alternate" hreflang="fr-FR">View this page in French</a>.
+      <button type="button" class="btn-inline" data-close-lang-suggest aria-label="Dismiss language suggestion">×</button>
+    </p>
+  </div>
+
+  <!-- Cookie banner (Consent Mode v2) -->
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-modal="true" aria-labelledby="cookie-title" hidden>
+    <div class="cookie-card" role="document">
+      <h2 id="cookie-title">Cookies & Analytics</h2>
+      <p>We use necessary cookies to run this site. With your consent, we’ll enable Google Analytics (GA4) to improve performance. You can change your choice anytime.</p>
+      <div class="cookie-actions">
+        <button type="button" class="btn btn-secondary" data-consent="deny">Decline</button>
+        <button type="button" class="btn btn-primary" data-consent="accept">Accept analytics</button>
+      </div>
+      <p class="cookie-footnote"><a href="/privacy-policy.html">Privacy policy</a></p>
+      <noscript>This website works without analytics. Enable JavaScript to manage your cookie preferences.</noscript>
+    </div>
+  </div>
+
+  <!-- Site Header -->
+  <header class="site-header" data-header>
+    <div class="container header-grid">
+      <a class="brand" href="/" aria-label="VideoCaptionStudio Home">
+        <img src="/images/videocaptionstudio-logo.png" alt="VideoCaptionStudio logo" width="168" height="32" decoding="async" />
+      </a>
+
+      <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false">
+        <span class="sr-only">Open menu</span>
+        <span class="burger" aria-hidden="true"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/legal-notice.html">Legal notice</a></li>
+          <li><a href="/privacy-policy.html">Privacy</a></li>
+        </ul>
+        <ul class="lang-switch" aria-label="Language">
+          <li class="current" aria-current="page"><span>EN</span></li>
+          <li><a href="/fr/" rel="alternate" hreflang="fr-FR">FR</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+  <!-- HERO (unchanged) -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1 class="hero-title">AI captions & faster edits for CapCut</h1>
+        <p class="hero-sub">Auto-subtitles in multiple languages, TTS voices, smart resizing & ready-to-use templates — on Web, Desktop and Mobile.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary cta-aff" data-cta="affiliate" href="https://capcutaffiliateprogram.pxf.io/yq111D" target="_blank" rel="noopener nofollow sponsored">Get CapCut&nbsp;Pro</a>
+          <a class="btn btn-ghost cta-aff" data-cta="affiliate" href="https://capcutaffiliateprogram.pxf.io/yq111D" target="_blank" rel="noopener nofollow sponsored">Try online</a>
+        </div>
+        <p class="microcopy">Partner site — not official. We may earn a commission on qualifying purchases (no extra cost).</p>
+      </div>
+      <div class="hero-media">
+        <picture>
+          <!-- <source srcset="/images/capture-hero.avif" type="image/avif" /> -->
+          <!-- <source srcset="/images/capture-hero.webp" type="image/webp" /> -->
+          <img src="/images/capture-heroEN.png" alt="CapCut studio with AI subtitles and captions workflow" width="1200" height="750" decoding="async" fetchpriority="high" />
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CAPCUT FOR CAPTIONS (expanded cards) -->
+  <section class="section why">
+    <div class="container">
+      <header class="section-head">
+        <h2>Why CapCut for captions & social formats</h2>
+        <p class="lead">From first draft to final export — keep everything in sync across Web, Windows, macOS, iOS and Android.</p>
+      </header>
+
+      <div class="features-grid">
+        <article class="feature">
+          <h3>AI Auto-captions</h3>
+          <p>Generate subtitles in multiple languages with timing, style presets and quick edits.</p>
+        </article>
+        <article class="feature">
+          <h3>Text-to-Speech</h3>
+          <p>Create narration with natural-sounding voices and accents, fine-tune pacing to match visuals.</p>
+        </article>
+        <article class="feature">
+          <h3>Templates & assets</h3>
+          <p>Speed up delivery with trending templates, transitions and effects for every platform.</p>
+        </article>
+        <article class="feature">
+          <h3>Background removal</h3>
+          <p>Cut out subjects with AI for clean compositions without green screens.</p>
+        </article>
+        <article class="feature">
+          <h3>Auto resize & reframe</h3>
+          <p>Adapt 16:9 ↔ 9:16 ↔ 1:1 in one click while keeping the subject in frame.</p>
+        </article>
+        <article class="feature">
+          <h3>Team & continuity</h3>
+          <p>Work across devices and share assets for a consistent, faster workflow.</p>
+        </article>
+        <!-- New cards -->
+        <article class="feature">
+          <h3>Stabilization & filler-word removal</h3>
+          <p>Polish footage and tighten dialogue automatically for short-form content.</p>
+        </article>
+        <article class="feature">
+          <h3>Bilingual captions</h3>
+          <p>Double-up reach with parallel subtitle tracks for international audiences.</p>
+        </article>
+      </div>
+
+      <div class="cta-row center">
+        <a class="btn btn-primary cta-aff" data-cta="affiliate" href="https://capcutaffiliateprogram.pxf.io/yq111D" target="_blank" rel="noopener nofollow sponsored">Start with CapCut&nbsp;Pro</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEMO (YouTube Lite) — unchanged structure -->
+  <section class="section demo" id="demo">
+    <div class="container">
+      <header class="section-head">
+        <h2>Watch the 3-minute demo</h2>
+        <p class="lead">Auto-captions, TTS and auto-reframe — click to load the player.</p>
+      </header>
+
+      <div class="yt-lite" data-video-id="1d1I35F08ic" aria-label="Play demo video" role="button" tabindex="0">
+        <img class="yt-thumb" src="https://i.ytimg.com/vi/1d1I35F08ic/hqdefault.jpg" alt="Demo thumbnail" width="1280" height="720" decoding="async" loading="lazy" />
+        <button class="yt-play" aria-label="Play video">▶</button>
+      </div>
+
+      <noscript>
+        <div class="video-fallback">
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/1d1I35F08ic" title="CapCut demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </noscript>
+
+      <ul class="bullets">
+        <li>Generate & edit multilingual captions</li>
+        <li>Use TTS voices and adjust pacing</li>
+        <li>Auto-reframe for TikTok, Reels & Shorts</li>
+      </ul>
+
+      <div class="cta-row center">
+        <a class="btn btn-primary cta-aff" data-cta="affiliate" href="https://capcutaffiliateprogram.pxf.io/yq111D" target="_blank" rel="noopener nofollow sponsored">Get CapCut&nbsp;Pro</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW: What’s new in CapCut (Oct 2025) -->
+  <section class="section" id="whats-new">
+    <div class="container">
+      <header class="section-head">
+        <h2>What’s new in CapCut — October 2025</h2>
+        <p class="lead">Highlights that speed up captioning and short-form delivery.</p>
+      </header>
+
+      <div class="features-grid">
+        <article class="feature">
+          <h3>Auto Reframe upgrades</h3>
+          <p>Resize for 9:16/1:1 while keeping the subject centered — ideal for Shorts, Reels and TikTok.</p>
+        </article>
+        <article class="feature">
+          <h3>AI editor improvements</h3>
+          <p>Script-to-video, TTS, stabilization and filler-word removal to clean up talk-to-camera clips.</p>
+        </article>
+        <article class="feature">
+          <h3>Direct publish</h3>
+          <p>Push your edit directly to YouTube from the online editor to save time between versions.</p>
+        </article>
+        <article class="feature">
+          <h3>Pro cloud space</h3>
+          <p>CapCut Pro includes cloud storage (e.g., 100 GB) for projects and shared assets.</p>
+        </article>
+      </div>
+
+      <p class="microcopy">Notes: exact availability and promos (e.g., free trials) vary by region and time. Check in-app banners for current offers.</p>
+    </div>
+  </section>
+
+  <!-- NEW: Pricing & plans (non-contractual overview) -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <header class="section-head">
+        <h2>Pricing & plans</h2>
+        <p class="lead">Free to start. Pro unlocks premium assets, extra AI features and higher limits.</p>
+      </header>
+
+      <div class="compare-grid compare-grid--wide">
+        <div class="compare-col">
+          <h3>Free</h3>
+          <ul>
+            <li>Core editor on Web/Desktop/Mobile</li>
+            <li>Auto-captions & basic TTS</li>
+            <li>Templates, filters & effects (free set)</li>
+            <li>Export with standard options</li>
+          </ul>
+        </div>
+        <div class="compare-col">
+          <h3>Pro</h3>
+          <ul>
+            <li>Premium templates, effects & stock</li>
+            <li>Advanced/expanded AI features & usage</li>
+            <li>Cloud storage (e.g., 100 GB) & team workflows</li>
+            <li>Priority assets & export features</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cta-row center">
+        <a class="btn btn-primary cta-aff" data-cta="affiliate" href="https://capcutaffiliateprogram.pxf.io/yq111D" target="_blank" rel="noopener nofollow sponsored">Try CapCut&nbsp;Pro</a>
+        <a class="btn btn-ghost cta-aff" data-cta="affiliate" href="https://capcutaffiliateprogram.pxf.io/yq111D" target="_blank" rel="noopener nofollow sponsored">Start free on the Web</a>
+      </div>
+
+      <p class="microcopy">Promotions (e.g., 7-day Pro trials) are time-limited and region-dependent. See CapCut’s subscribe page for current details.</p>
+    </div>
+  </section>
+
+  <!-- NEW: How-to — Auto-captions & TTS -->
+  <section class="section" id="how-to">
+    <div class="container container--prose">
+      <h2>How to add auto-captions & TTS (Web/Desktop/Mobile)</h2>
+
+      <h3>Auto-captions</h3>
+      <ol>
+        <li><strong>Open your project</strong> and place the clip on the timeline.</li>
+        <li>Go to <strong>Text → Auto Captions</strong>, choose the spoken language, then <strong>Create</strong>.</li>
+        <li>Edit timing and style (font, size, color, effects). Optional: add a bilingual track.</li>
+        <li><strong>Export</strong> your video (captions burn-in) or export caption files if available.</li>
+      </ol>
+
+      <h3>Text-to-Speech</h3>
+      <ol>
+        <li>Paste your script into the <strong>TTS</strong> panel.</li>
+        <li>Pick a voice & accent, tweak speed/pitch, and generate.</li>
+        <li>Place the narration on a track, align to your cuts, then export.</li>
+      </ol>
+
+      <div class="notice">
+        <p><strong>Tip:</strong> For Shorts/Reels, combine <em>Auto Reframe</em> with punch-in cuts and on-brand caption styles.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW: Quick workflows for Shorts/Reels/TikTok -->
+  <section class="section" id="workflows">
+    <div class="container">
+      <h2>Fast workflows for vertical formats</h2>
+      <ul class="bullets">
+        <li><strong>Auto Reframe</strong>: duplicate your 16:9 timeline, convert to 9:16, keep subject centered, then export.</li>
+        <li><strong>Hook + Captions</strong>: front-load the key line; apply bold caption style + emojis for retention.</li>
+        <li><strong>TTS fallback</strong>: if audio is noisy, generate a clean TTS and mix at −6 LUFS relative to music.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- NEW: Platforms & requirements -->
+  <section class="section" id="platforms">
+    <div class="container">
+      <h2>Platforms & requirements</h2>
+      <ul class="bullets">
+        <li><strong>Web</strong> editor in modern browsers (no install).</li>
+        <li><strong>Desktop</strong> apps for Windows & macOS.</li>
+        <li><strong>Mobile</strong> apps for iOS & Android.</li>
+        <li><strong>Direct publish</strong> to YouTube available from the online editor.</li>
+      </ul>
+      <p class="microcopy">Feature availability and performance can vary by device and region.</p>
+    </div>
+  </section>
+
+  <!-- EXISTING: Light comparison (kept) -->
+  <section class="section compare">
+    <div class="container">
+      <header class="section-head">
+        <h2>CapCut vs traditional NLEs (quick take)</h2>
+        <p class="lead">Captions, TTS, auto-reframe, social templates — pair with your main NLE when needed.</p>
+      </header>
+      <div class="compare-grid" role="table" aria-label="Quick comparison">
+        <div role="rowgroup" class="compare-col">
+          <h3>CapCut</h3>
+          <ul>
+            <li>Built-in AI captions & TTS</li>
+            <li>One-click resize/reframe</li>
+            <li>Web + Desktop + Mobile</li>
+            <li>Large social-ready template library</li>
+          </ul>
+        </div>
+        <div role="rowgroup" class="compare-col">
+          <h3>Traditional NLEs</h3>
+          <ul>
+            <li>Great for complex long-form</li>
+            <li>Captions/resize often require add-ons</li>
+            <li>Usually desktop-only</li>
+            <li>Fewer social templates</li>
+          </ul>
+        </div>
+      </div>
+      <p class="microcopy">Notes: exact features and availability may change by region and over time. Evaluate with your workflow.</p>
+    </div>
+  </section>
+
+  <!-- EXISTING: FAQ block (unchanged to keep JSON-LD in sync) -->
+  <section class="section faq" id="faq">
+    <div class="container">
+      <h2>FAQ</h2>
+      <!-- keep original details/questions here exactly as in your file -->
+      <details>
+        <summary>Is CapCut free and what does Pro add?</summary>
+        <div class="details-body">
+          CapCut provides a generous free tier. CapCut Pro unlocks additional assets, templates and some AI features or usage limits. Benefits may vary by region and time.
+        </div>
+      </details>
+      <details>
+        <summary>Does CapCut support AI auto-captions in multiple languages?</summary>
+        <div class="details-body">
+          Yes. You can auto-generate subtitles, restyle them and export with your video.
+        </div>
+      </details>
+      <details>
+        <summary>Can I create AI voice-overs?</summary>
+        <div class="details-body">
+          Yes. Use Text-to-Speech to turn scripts into narration with different voices and accents.
+        </div>
+      </details>
+      <details>
+        <summary>Is there a web version?</summary>
+        <div class="details-body">
+          Yes. The online editor runs in modern browsers so you can start without installing apps.
+        </div>
+      </details>
+      <details>
+        <summary>Do you use CapCut’s logo?</summary>
+        <div class="details-body">
+          We only display CapCut’s brand inside content areas when necessary for descriptive purposes — never in our header/footer.
+        </div>
+      </details>
+
+      <div class="cta-row center">
+        <a class="btn btn-primary cta-aff" data-cta="affiliate" href="https://capcutaffiliateprogram.pxf.io/yq111D" target="_blank" rel="noopener nofollow sponsored">Upgrade to CapCut&nbsp;Pro</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="foot-brand">
+        <img src="/images/videocaptionstudio-logo.png" alt="VideoCaptionStudio logo" width="140" height="28" decoding="async" loading="lazy" />
+        <p>&copy; <span id="year"></span> VideoCaptionStudio — operated by E-Com Shop.</p>
+        <p class="disclosure">Sponsored partner links may earn us a commission. Prices, conditions and cookie durations can change over time and by region.</p>
+        <p class="sitemap-links">
+          <a href="/sitemap.xml">Sitemap index</a> ·
+          <a href="/sitemaps/sitemap-en.xml">EN sitemap</a> ·
+          <a href="/sitemaps/sitemap-fr.xml">FR sitemap</a>
+        </p>
+      </div>
+      <nav class="foot-nav" aria-label="Footer">
+        <ul>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/legal-notice.html">Legal notice</a></li>
+          <li><a href="/privacy-policy.html">Privacy policy</a></li>
+          <li><a href="/fr/" rel="alternate" hreflang="fr-FR">FR version</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Affiliation badge (hidden by CSS) -->
+    <p class="aff-badge" aria-hidden="true">Non-official CapCut partner site.</p>
+  </footer>
+
+  <!-- GA4: injected after consent by /assets/main.js (per Consent Mode v2) -->
+  <template id="ga4-template">
+    <!-- Google tag (gtag.js) — inject AFTER consent -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C5YHHXL9DL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-C5YHHXL9DL', { anonymize_ip: true });
+    </script>
+  </template>
+
+  <!-- YouTube noscript thumbnail placeholder (for CSP preloading hints if needed) -->
+  <link rel="preload" as="image" href="https://i.ytimg.com/vi/1d1I35F08ic/hqdefault.jpg" imagesrcset="https://i.ytimg.com/vi/1d1I35F08ic/hqdefault.jpg 1x" />
+
+  <!-- Main JS (deferred) -->
+  <script defer src="/assets/main.js"></script>
+</body>
+</html>

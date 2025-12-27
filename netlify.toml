@@ -1,0 +1,77 @@
+# ===========================
+# VideoCaptionStudio Netlify
+# Security, CSP, caching
+# ===========================
+
+[build]
+  publish = "."
+  command = ""
+
+# -------- Global security headers (all routes)
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=(), payment=(), browsing-topics=()"
+    # CSP: allow GA + GTM (analytics only after consent via JS), YouTube (nocookie) and i.ytimg.com for thumbnails
+    Content-Security-Policy = """
+      default-src 'self';
+      base-uri 'self';
+      object-src 'none';
+      form-action 'self';
+      script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com;
+      style-src 'self' 'unsafe-inline';
+      img-src 'self' data: https: https://i.ytimg.com;
+      media-src 'self' blob: https:;
+      connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com;
+      frame-src https://www.youtube-nocookie.com;
+      upgrade-insecure-requests
+    """
+
+    # Helpful preconnects (Netlify allows multiple Link headers)
+    Link = "<https://www.googletagmanager.com>; rel=preconnect; crossorigin"
+    Link = "<https://www.google-analytics.com>; rel=preconnect; crossorigin"
+    Link = "<https://i.ytimg.com>; rel=preconnect"
+    Link = "<https://www.youtube-nocookie.com>; rel=preconnect; crossorigin"
+
+# -------- Long-term immutable cache for static assets
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# -------- HTML pages: always revalidate (avoid stale pages)
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Netlify matches the most specific rule last; this applies to root HTML (not in /assets or /images)
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# -------- Sitemaps and robots: cache moderately
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/sitemaps/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+# Notes:
+# - Brotli/Gzip: automatically handled by Netlify at the edge.
+# - Domain forcing (apex) is set in the separate '/_redirects' file as requested.
+# - GA4 is injected only after consent by /assets/main.js; CSP above already allows GA domains.

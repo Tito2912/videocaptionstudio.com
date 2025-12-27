@@ -1,0 +1,11 @@
+# robots.txt for https://videocaptionstudio.com/
+# Last updated: 2025-09-29
+
+User-agent: *
+Allow: /
+
+# We do not use server-side language redirects (client-side hint only).
+
+Sitemap: https://videocaptionstudio.com/sitemap.xml
+Sitemap: https://videocaptionstudio.com/sitemaps/sitemap-en.xml
+Sitemap: https://videocaptionstudio.com/sitemaps/sitemap-fr.xml

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Home (EN root) -->
+  <url>
+    <loc>https://videocaptionstudio.com/</loc>
+    <lastmod>2025-09-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://videocaptionstudio.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://videocaptionstudio.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://videocaptionstudio.com/"/>
+  </url>
+
+  <!-- Blog hub (EN) -->
+  <url>
+    <loc>https://videocaptionstudio.com/blog/</loc>
+    <lastmod>2025-09-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://videocaptionstudio.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://videocaptionstudio.com/fr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://videocaptionstudio.com/blog/"/>
+  </url>
+
+  <!-- Article: CapCut AI Subtitles (EN) -->
+  <url>
+    <loc>https://videocaptionstudio.com/blog/capcut-ai-subtitles-2025</loc>
+    <lastmod>2025-09-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://videocaptionstudio.com/blog/capcut-ai-subtitles-2025"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://videocaptionstudio.com/fr/blog/sous-titres-capcut-ia-2025"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://videocaptionstudio.com/blog/capcut-ai-subtitles-2025"/>
+  </url>
+
+  <!-- Article: CapCut Pro vs Free (EN) -->
+  <url>
+    <loc>https://videocaptionstudio.com/blog/capcut-pro-vs-free-2025</loc>
+    <lastmod>2025-09-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://videocaptionstudio.com/blog/capcut-pro-vs-free-2025"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://videocaptionstudio.com/fr/blog/capcut-pro-vs-gratuit-2025"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://videocaptionstudio.com/blog/capcut-pro-vs-free-2025"/>
+  </url>
+
+  <!-- Legal notice (EN) -->
+  <url>
+    <loc>https://videocaptionstudio.com/legal-notice</loc>
+    <lastmod>2025-09-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://videocaptionstudio.com/legal-notice"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://videocaptionstudio.com/fr/mentions-legales"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://videocaptionstudio.com/legal-notice"/>
+  </url>
+
+  <!-- Privacy policy (EN) -->
+  <url>
+    <loc>https://videocaptionstudio.com/privacy-policy</loc>
+    <lastmod>2025-09-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://videocaptionstudio.com/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="fr-FR" href="https://videocaptionstudio.com/fr/politique-de-confidentialite"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://videocaptionstudio.com/privacy-policy"/>
+  </url>
+
+</urlset>
