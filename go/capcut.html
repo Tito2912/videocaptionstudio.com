@@ -49,10 +49,10 @@
       <p id="market-status" class="note">Checking your browser settings…</p>
     </header>
 
-    <div class="cta-row">
+    <div id="cta-row" class="cta-row">
       <a id="continue-link" class="btn btn-primary" href="https://capcutaffiliateprogram.pxf.io/yq111D" target="_blank" rel="noopener nofollow sponsored">Continue to CapCut Pro</a>
-      <a class="btn btn-ghost" href="https://www.capcut.com/" target="_blank" rel="noopener nofollow">Open CapCut (non‑affiliate)</a>
     </div>
+    <p class="microcopy"><a class="link-tiny" href="https://www.capcut.com/" target="_blank" rel="noopener nofollow">Open CapCut (non‑affiliate)</a></p>
 
     <section id="market-picker" hidden>
       <h2>Confirm your market</h2>
@@ -78,6 +78,7 @@
 
       const statusEl = document.getElementById('market-status');
       const continueEl = document.getElementById('continue-link');
+      const ctaRowEl = document.getElementById('cta-row');
       const pickerEl = document.getElementById('market-picker');
 
       function appendUtm(url) {
@@ -117,6 +118,7 @@
         window.setTimeout(() => { window.location.href = outbound; }, 700);
       } else {
         continueEl.hidden = true;
+        if (ctaRowEl) ctaRowEl.hidden = true;
         statusEl.textContent = guessed
           ? `Detected market: ${guessed}. The partner offer is intended for US, UK, FR, DE.`
           : 'We could not detect your market. The partner offer is intended for US, UK, FR, DE.';

@@ -245,6 +245,8 @@ code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberat
   background: transparent; border: 1px solid var(--border);
 }
 .btn-ghost:hover { background: rgba(255,255,255,.06); border-color: var(--accent); }
+.link-tiny { font-size: .82rem; color: var(--text-dim); }
+.link-tiny:hover { color: var(--text); text-decoration: underline; }
 
 /* ----------------------------- */
 /* 7) Sections & Hero            */

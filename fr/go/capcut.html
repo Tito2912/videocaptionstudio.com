@@ -49,10 +49,10 @@
       <p id="market-status" class="note">Vérification des paramètres du navigateur…</p>
     </header>
 
-    <div class="cta-row">
+    <div id="cta-row" class="cta-row">
       <a id="continue-link" class="btn btn-primary" href="https://capcutaffiliateprogram.pxf.io/yq111D" target="_blank" rel="noopener nofollow sponsored">Continuer vers CapCut Pro</a>
-      <a class="btn btn-ghost" href="https://www.capcut.com/" target="_blank" rel="noopener nofollow">Ouvrir CapCut (sans affiliation)</a>
     </div>
+    <p class="microcopy"><a class="link-tiny" href="https://www.capcut.com/" target="_blank" rel="noopener nofollow">Ouvrir CapCut (sans affiliation)</a></p>
 
     <section id="market-picker" hidden>
       <h2>Confirmer votre marché</h2>
@@ -78,6 +78,7 @@
 
       const statusEl = document.getElementById('market-status');
       const continueEl = document.getElementById('continue-link');
+      const ctaRowEl = document.getElementById('cta-row');
       const pickerEl = document.getElementById('market-picker');
 
       function appendUtm(url) {
@@ -117,6 +118,7 @@
         window.setTimeout(() => { window.location.href = outbound; }, 700);
       } else {
         continueEl.hidden = true;
+        if (ctaRowEl) ctaRowEl.hidden = true;
         statusEl.textContent = guessed
           ? `Marché détecté : ${guessed}. L’offre partenaire est destinée aux marchés US, UK, FR, DE.`
           : 'Marché non détecté. L’offre partenaire est destinée aux marchés US, UK, FR, DE.';
