@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="fr" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+
+  <title>Continuer vers CapCut | VideoCaptionStudio</title>
+  <meta name="description" content="Continuer vers CapCut via notre lien partenaire. Offre destinée aux marchés US, UK, FR, DE." />
+  <meta name="robots" content="noindex,nofollow" />
+
+  <link rel="canonical" href="https://videocaptionstudio.com/fr/go/capcut.html" />
+
+  <link rel="stylesheet" href="/assets/styles.css" />
+
+  <link rel="icon" href="/images/favicon.ico" sizes="any" />
+  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+  <link rel="manifest" href="/images/site.webmanifest" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-grid">
+      <a class="brand" href="/fr/" aria-label="Accueil VideoCaptionStudio">
+        <img src="/images/videocaptionstudio-logo.png" alt="Logo VideoCaptionStudio" width="168" height="32" decoding="async" />
+      </a>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="/fr/">Accueil</a></li>
+          <li><a href="/fr/blog/">Blog</a></li>
+          <li><a href="/fr/mentions-legales.html">Mentions légales</a></li>
+          <li><a href="/fr/politique-de-confidentialite.html">Confidentialité</a></li>
+        </ul>
+        <ul class="lang-switch" aria-label="Langue">
+          <li class="current" aria-current="page"><span>FR</span></li>
+          <li><a href="/go/capcut.html" rel="alternate" hreflang="en">EN</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container prose">
+    <header class="article-hero">
+      <h1>Continuer vers CapCut</h1>
+      <p class="lead">Notre offre partenaire CapCut est destinée aux marchés <strong>US, UK, France et Allemagne</strong>.</p>
+      <p id="market-status" class="note">Vérification des paramètres du navigateur…</p>
+    </header>
+
+    <div class="cta-row">
+      <a id="continue-link" class="btn btn-primary" href="https://capcutaffiliateprogram.pxf.io/yq111D" target="_blank" rel="noopener nofollow sponsored">Continuer vers CapCut Pro</a>
+      <a class="btn btn-ghost" href="https://www.capcut.com/" target="_blank" rel="noopener nofollow">Ouvrir CapCut (sans affiliation)</a>
+    </div>
+
+    <section id="market-picker" hidden>
+      <h2>Confirmer votre marché</h2>
+      <p>Si vous êtes dans un pays éligible, sélectionnez‑le ci‑dessous pour continuer via notre lien partenaire.</p>
+      <div class="cta-row">
+        <button type="button" class="btn btn-secondary" data-market="US">US</button>
+        <button type="button" class="btn btn-secondary" data-market="GB">UK</button>
+        <button type="button" class="btn btn-secondary" data-market="FR">FR</button>
+        <button type="button" class="btn btn-secondary" data-market="DE">DE</button>
+      </div>
+    </section>
+
+    <p class="microcopy">Site partenaire — non officiel. Nous pouvons percevoir une commission sur les achats éligibles (sans surcoût).</p>
+  </main>
+
+  <script>
+    (() => {
+      'use strict';
+
+      const AFFILIATE_URL = 'https://capcutaffiliateprogram.pxf.io/yq111D';
+      const CORE_MARKETS = new Set(['US','GB','FR','DE']);
+      const UTM_PARAMS = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content'];
+
+      const statusEl = document.getElementById('market-status');
+      const continueEl = document.getElementById('continue-link');
+      const pickerEl = document.getElementById('market-picker');
+
+      function appendUtm(url) {
+        try {
+          const base = new URL(url);
+          const cur = new URL(window.location.href);
+          UTM_PARAMS.forEach((k) => {
+            const v = cur.searchParams.get(k);
+            if (v) base.searchParams.set(k, v);
+          });
+          return base.toString();
+        } catch {
+          return url;
+        }
+      }
+
+      function guessCountryFromLang() {
+        const langs = Array.isArray(navigator.languages) && navigator.languages.length
+          ? navigator.languages
+          : [navigator.language || ''];
+
+        for (const lang of langs) {
+          const m = String(lang).match(/-([a-zA-Z]{2})$/);
+          if (m && m[1]) return m[1].toUpperCase();
+        }
+        return null;
+      }
+
+      const outbound = appendUtm(AFFILIATE_URL);
+      continueEl.href = outbound;
+
+      const guessed = guessCountryFromLang();
+      const isCore = guessed ? CORE_MARKETS.has(guessed) : false;
+
+      if (isCore) {
+        statusEl.textContent = `Marché détecté : ${guessed}. Redirection…`;
+        window.setTimeout(() => { window.location.href = outbound; }, 700);
+      } else {
+        continueEl.hidden = true;
+        statusEl.textContent = guessed
+          ? `Marché détecté : ${guessed}. L’offre partenaire est destinée aux marchés US, UK, FR, DE.`
+          : 'Marché non détecté. L’offre partenaire est destinée aux marchés US, UK, FR, DE.';
+        pickerEl.hidden = false;
+
+        pickerEl.addEventListener('click', (e) => {
+          const btn = e.target.closest('[data-market]');
+          if (!btn) return;
+          const market = btn.getAttribute('data-market');
+          if (!market || !CORE_MARKETS.has(market)) return;
+          window.location.href = outbound;
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

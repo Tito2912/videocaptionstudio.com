@@ -225,7 +225,13 @@
     document.addEventListener('click', (e) => {
       const a = e.target.closest('a');
       if (!a) return;
-      const isAffiliate = a.matches('.cta-aff') || (a.href && a.href.includes('capcutaffiliateprogram.pxf.io/yq111D'));
+      const isAffiliate = a.matches('.cta-aff') || (
+        a.href && (
+          a.href.includes('capcutaffiliateprogram.pxf.io/yq111D') ||
+          a.href.includes('/go/capcut') ||
+          a.href.includes('/fr/go/capcut')
+        )
+      );
       if (!isAffiliate) return;
       try {
         gtag('event', 'affiliate_click', {
