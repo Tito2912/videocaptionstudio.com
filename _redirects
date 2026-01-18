@@ -17,6 +17,18 @@ https://www.videocaptionstudio.com/*      https://videocaptionstudio.com/:splat 
 /fr/index.html                            /fr/                                      301
 /fr/blog/index.html                       /fr/blog/                                 301
 
+# 2b) Canonicalize .html pages to clean URLs
+/privacy-policy.html                      /privacy-policy                            301
+/legal-notice.html                        /legal-notice                              301
+/blog/capcut-ai-subtitles-2025.html       /blog/capcut-ai-subtitles-2025             301
+/blog/capcut-pro-vs-free-2025.html        /blog/capcut-pro-vs-free-2025              301
+/blog/capcut-update-2025.html             /blog/capcut-update-2025                   301
+/fr/politique-de-confidentialite.html     /fr/politique-de-confidentialite           301
+/fr/mentions-legales.html                 /fr/mentions-legales                       301
+/fr/blog/sous-titres-capcut-ia-2025.html  /fr/blog/sous-titres-capcut-ia-2025        301
+/fr/blog/capcut-pro-vs-gratuit-2025.html  /fr/blog/capcut-pro-vs-gratuit-2025        301
+/fr/blog/mise-a-jour-capcut-2025.html     /fr/blog/mise-a-jour-capcut-2025           301
+
 # 3) (Optional) Handle stray double slashes
 # //anything -> /anything
 //:splat                                   /:splat                                   301
