@@ -28,6 +28,8 @@ https://www.videocaptionstudio.com/*      https://videocaptionstudio.com/:splat 
 /fr/blog/sous-titres-capcut-ia-2025.html  /fr/blog/sous-titres-capcut-ia-2025        301
 /fr/blog/capcut-pro-vs-gratuit-2025.html  /fr/blog/capcut-pro-vs-gratuit-2025        301
 /fr/blog/mise-a-jour-capcut-2025.html     /fr/blog/mise-a-jour-capcut-2025           301
+/go/capcut.html                           /go/capcut                                 301
+/fr/go/capcut.html                        /fr/go/capcut                              301
 
 # 3) (Optional) Handle stray double slashes
 # //anything -> /anything

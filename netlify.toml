@@ -7,6 +7,25 @@
   publish = "."
   command = ""
 
+# -------- Domain canonicalization (reduce redirect chains)
+[[redirects]]
+  from = "http://videocaptionstudio.com/*"
+  to = "https://videocaptionstudio.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.videocaptionstudio.com/*"
+  to = "https://videocaptionstudio.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.videocaptionstudio.com/*"
+  to = "https://videocaptionstudio.com/:splat"
+  status = 301
+  force = true
+
 # -------- Global security headers (all routes)
 [[headers]]
   for = "/*"
