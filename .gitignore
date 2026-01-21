@@ -1,0 +1,13 @@
+# Local SEO audits / exports
+ahrefs-report*/
+ahrefs-reports*/
+ahrefs-export/
+.ahrefs_report*/
+*_all-issues_*.zip
+*_slow-page_*.csv
+*_hreflang_conflicts_on_page_*.csv
+
+# OS / tooling
+__pycache__/
+.DS_Store
+Thumbs.db
