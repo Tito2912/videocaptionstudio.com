@@ -10,7 +10,10 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://videocaptionstudio.com/"/>
     <xhtml:link rel="alternate" hreflang="fr-FR" href="https://videocaptionstudio.com/fr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://videocaptionstudio.com/"/>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://videocaptionstudio.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://videocaptionstudio.com/de/"/>
+</url>
 
   <!-- Blog hub (EN) -->
   <url>
@@ -19,7 +22,10 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://videocaptionstudio.com/blog/"/>
     <xhtml:link rel="alternate" hreflang="fr-FR" href="https://videocaptionstudio.com/fr/blog/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://videocaptionstudio.com/blog/"/>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://videocaptionstudio.com/es/blog/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://videocaptionstudio.com/de/blog/"/>
+</url>
 
   <!-- Article: CapCut AI Subtitles (EN) -->
   <url>
@@ -28,7 +34,10 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://videocaptionstudio.com/blog/capcut-ai-subtitles-2025"/>
     <xhtml:link rel="alternate" hreflang="fr-FR" href="https://videocaptionstudio.com/fr/blog/sous-titres-capcut-ia-2025"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://videocaptionstudio.com/blog/capcut-ai-subtitles-2025"/>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://videocaptionstudio.com/es/blog/capcut-ai-subtitles-2025"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://videocaptionstudio.com/de/blog/capcut-ai-subtitles-2025"/>
+</url>
 
   <!-- Article: CapCut Pro vs Free (EN) -->
   <url>
@@ -37,7 +46,10 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://videocaptionstudio.com/blog/capcut-pro-vs-free-2025"/>
     <xhtml:link rel="alternate" hreflang="fr-FR" href="https://videocaptionstudio.com/fr/blog/capcut-pro-vs-gratuit-2025"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://videocaptionstudio.com/blog/capcut-pro-vs-free-2025"/>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://videocaptionstudio.com/es/blog/capcut-pro-vs-free-2025"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://videocaptionstudio.com/de/blog/capcut-pro-vs-free-2025"/>
+</url>
 
   <!-- Article: CapCut Update 2025 (EN) -->
   <url>
@@ -46,7 +58,10 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://videocaptionstudio.com/blog/capcut-update-2025"/>
     <xhtml:link rel="alternate" hreflang="fr-FR" href="https://videocaptionstudio.com/fr/blog/mise-a-jour-capcut-2025"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://videocaptionstudio.com/blog/capcut-update-2025"/>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://videocaptionstudio.com/es/blog/capcut-update-2025"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://videocaptionstudio.com/de/blog/capcut-update-2025"/>
+</url>
 
   <!-- Legal notice (EN) -->
   <url>
@@ -55,7 +70,10 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://videocaptionstudio.com/legal-notice"/>
     <xhtml:link rel="alternate" hreflang="fr-FR" href="https://videocaptionstudio.com/fr/mentions-legales"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://videocaptionstudio.com/legal-notice"/>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://videocaptionstudio.com/es/legal-notice"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://videocaptionstudio.com/de/legal-notice"/>
+</url>
 
   <!-- Privacy policy (EN) -->
   <url>
@@ -64,6 +82,9 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://videocaptionstudio.com/privacy-policy"/>
     <xhtml:link rel="alternate" hreflang="fr-FR" href="https://videocaptionstudio.com/fr/politique-de-confidentialite"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://videocaptionstudio.com/privacy-policy"/>
-  </url>
+  
+    <xhtml:link rel="alternate" hreflang="es" href="https://videocaptionstudio.com/es/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://videocaptionstudio.com/de/privacy-policy"/>
+</url>
 
 </urlset>
