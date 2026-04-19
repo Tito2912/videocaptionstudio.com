@@ -1,6 +1,6 @@
 # =========================================================
 # VideoCaptionStudio — Netlify Redirects
-# Canonical domain & HTTPS
+# Canonical paths (avoid duplicate content)
 # IMPORTANT: No server-side language redirection here.
 # =========================================================
 
@@ -11,26 +11,45 @@ https://www.videocaptionstudio.com/*      https://videocaptionstudio.com/:splat 
 
 # 2) Canonicalize folder index pages (avoid duplicate content)
 #    Note: These keep language URLs intact; NO geo/language redirect.
-#/ -> /
-/index.html                               /                                         301
-/blog/index.html                          /blog/                                    301
-/fr/index.html                            /fr/                                      301
-/fr/blog/index.html                       /fr/blog/                                 301
+/index.html                               /                                         301!
+/blog/index.html                          /blog/                                    301!
+/fr/index.html                            /fr/                                      301!
+/fr/blog/index.html                       /fr/blog/                                 301!
+/es/index.html                            /es/                                      301!
+/es/blog/index.html                       /es/blog/                                 301!
+/de/index.html                            /de/                                      301!
+/de/blog/index.html                       /de/blog/                                 301!
 
-# 2b) Canonicalize .html pages to clean URLs
-/privacy-policy.html                      /privacy-policy                            301
-/legal-notice.html                        /legal-notice                              301
-/blog/capcut-ai-subtitles-2025.html       /blog/capcut-ai-subtitles-2025             301
-/blog/capcut-pro-vs-free-2025.html        /blog/capcut-pro-vs-free-2025              301
-/blog/capcut-update-2025.html             /blog/capcut-update-2025                   301
-/fr/politique-de-confidentialite.html     /fr/politique-de-confidentialite           301
-/fr/mentions-legales.html                 /fr/mentions-legales                       301
-/fr/blog/sous-titres-capcut-ia-2025.html  /fr/blog/sous-titres-capcut-ia-2025        301
-/fr/blog/capcut-pro-vs-gratuit-2025.html  /fr/blog/capcut-pro-vs-gratuit-2025        301
-/fr/blog/mise-a-jour-capcut-2025.html     /fr/blog/mise-a-jour-capcut-2025           301
-/go/capcut.html                           /go/capcut                                 301
-/fr/go/capcut.html                        /fr/go/capcut                              301
+# 2b) Canonicalize .html pages to clean URLs (force even when file exists)
+/privacy-policy.html                      /privacy-policy                            301!
+/legal-notice.html                        /legal-notice                              301!
+/blog/capcut-ai-subtitles-2025.html       /blog/capcut-ai-subtitles-2025             301!
+/blog/capcut-pro-vs-free-2025.html        /blog/capcut-pro-vs-free-2025              301!
+/blog/capcut-update-2025.html             /blog/capcut-update-2025                   301!
+
+/fr/politique-de-confidentialite.html     /fr/politique-de-confidentialite           301!
+/fr/mentions-legales.html                 /fr/mentions-legales                       301!
+/fr/blog/sous-titres-capcut-ia-2025.html  /fr/blog/sous-titres-capcut-ia-2025        301!
+/fr/blog/capcut-pro-vs-gratuit-2025.html  /fr/blog/capcut-pro-vs-gratuit-2025        301!
+/fr/blog/mise-a-jour-capcut-2025.html     /fr/blog/mise-a-jour-capcut-2025           301!
+/fr/go/capcut.html                        /fr/go/capcut                              301!
+
+/es/privacy-policy.html                   /es/privacy-policy                          301!
+/es/legal-notice.html                     /es/legal-notice                            301!
+/es/blog/capcut-ai-subtitles-2025.html    /es/blog/capcut-ai-subtitles-2025           301!
+/es/blog/capcut-pro-vs-free-2025.html     /es/blog/capcut-pro-vs-free-2025            301!
+/es/blog/capcut-update-2025.html          /es/blog/capcut-update-2025                 301!
+/es/go/capcut.html                        /es/go/capcut                               301!
+
+/de/privacy-policy.html                   /de/privacy-policy                          301!
+/de/legal-notice.html                     /de/legal-notice                            301!
+/de/blog/capcut-ai-subtitles-2025.html    /de/blog/capcut-ai-subtitles-2025           301!
+/de/blog/capcut-pro-vs-free-2025.html     /de/blog/capcut-pro-vs-free-2025            301!
+/de/blog/capcut-update-2025.html          /de/blog/capcut-update-2025                 301!
+/de/go/capcut.html                        /de/go/capcut                               301!
+
+/go/capcut.html                           /go/capcut                                 301!
 
 # 3) (Optional) Handle stray double slashes
 # //anything -> /anything
-//:splat                                   /:splat                                   301
+//:splat                                   /:splat                                   301!

@@ -6,6 +6,8 @@ ahrefs-export/
 *_all-issues_*.zip
 *_slow-page_*.csv
 *_hreflang_conflicts_on_page_*.csv
+videocaptionstudio.com-Performance-on-Search-*
+SEO_AUDIT_*.md
 
 # OS / tooling
 __pycache__/
