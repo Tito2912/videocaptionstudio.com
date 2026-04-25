@@ -5,7 +5,10 @@
 
 [build]
   publish = "."
-  command = ""
+  command = "node scripts/ping-indexnow.cjs"
+
+[build.environment]
+  NODE_VERSION = "18"
 
 # -------- Domain canonicalization (reduce redirect chains)
 [[redirects]]
