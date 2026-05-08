@@ -24,7 +24,7 @@
 <meta name="twitter:description" content="Paso a paso CapCut subtítulos flujo de trabajo: generar leyendas de IA exactas, darle estilo, añadir voz a TTS y exportar formatos verticales rápido."/>
 <meta name="twitter:image" content="https://videocaptionstudio.com/images/capture-hero.jpg"/>
 <!-- Styles -->
-<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/styles.min.css" rel="stylesheet"/>
 <!-- Favicons / Manifest -->
 <link href="/images/favicon.ico" rel="icon" sizes="any"/>
 <link href="/images/favicon.svg" rel="icon" type="image/svg+xml"/>
@@ -105,7 +105,7 @@
 <header class="site-header" data-header="">
 <div class="container header-grid">
 <a aria-label="VideoCaptionStudio Home" class="brand" href="/es/">
-<img alt="Logo VideoCaptionStudio" decoding="async" height="32" src="/images/videocaptionstudio-logo.png" width="168"/>
+<picture><source srcset="/images/videocaptionstudio-logo.webp" type="image/webp"><img alt="Logo VideoCaptionStudio" decoding="async" height="32" src="/images/videocaptionstudio-logo.png" width="168"/></picture>
 </a>
 <button aria-controls="site-nav" aria-expanded="false" class="nav-toggle">
 <span class="sr-only">Abrir menú</span>
@@ -271,7 +271,7 @@
 <footer class="site-footer">
 <div class="container footer-grid">
 <div class="foot-brand">
-<img alt="Logo VideoCaptionStudio" decoding="async" height="28" loading="lazy" src="/images/videocaptionstudio-logo.png" width="140"/>
+<picture><source srcset="/images/videocaptionstudio-logo.webp" type="image/webp"><img alt="Logo VideoCaptionStudio" decoding="async" height="28" loading="lazy" src="/images/videocaptionstudio-logo.png" width="140"/></picture>
 <p>© <span id="year"></span> VideoCaptionStudio — operado por E-Com Shop.</p>
 <p class="disclosure" data-nosnippet="">Los enlaces de socios patrocinados pueden ganarnos una comisión. Los precios, condiciones y duración de las cookies pueden cambiar con el tiempo y por región.</p>
 <p class="sitemap-links">
@@ -291,7 +291,7 @@
 </div>
 <p aria-hidden="true" class="aff-badge" data-nosnippet="">Sitio de socio no oficial de CapCut.</p>
 </footer>
-<!-- GA4 (injected after consent by /assets/main.js) -->
+<!-- GA4 (injected after consent by /assets/main.min.js) -->
 <template id="ga4-template">
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-C5YHHXL9DL"></script>
 <script>
@@ -304,6 +304,6 @@
 <!-- Preload YouTube thumbnail for LCP stability -->
 <link as="image" href="https://i.ytimg.com/vi/1d1I35F08ic/hqdefault.jpg" rel="preload"/>
 <!-- Main JS -->
-<script defer="" src="/assets/main.js"></script>
+<script defer="" src="/assets/main.min.js"></script>
 </body>
 </html>

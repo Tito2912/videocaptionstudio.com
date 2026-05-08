@@ -24,7 +24,7 @@
 <meta name="twitter:description" content="Mentions légales videocaptionstudio.com : éditeur, hébergeur, propriété intellectuelle, responsabilité, cookies/analytics, ODR UE et contact."/>
 <meta name="twitter:image" content="https://videocaptionstudio.com/images/capture-hero.jpg"/>
 <!-- Styles -->
-<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/styles.min.css" rel="stylesheet"/>
 <!-- Favicons / Manifest -->
 <link href="/images/favicon.ico" rel="icon" sizes="any"/>
 <link href="/images/favicon.svg" rel="icon" type="image/svg+xml"/>
@@ -79,7 +79,7 @@
 <header class="site-header" data-header="">
 <div class="container header-grid">
 <a aria-label="Accueil VideoCaptionStudio" class="brand" href="/fr/">
-<img alt="Logo VideoCaptionStudio" decoding="async" height="32" src="/images/videocaptionstudio-logo.png" width="168"/>
+<picture><source srcset="/images/videocaptionstudio-logo.webp" type="image/webp"><img alt="Logo VideoCaptionStudio" decoding="async" height="32" src="/images/videocaptionstudio-logo.png" width="168"/></picture>
 </a>
 <button aria-controls="site-nav" aria-expanded="false" class="nav-toggle">
 <span class="sr-only">Ouvrir le menu</span>
@@ -157,7 +157,7 @@
 <footer class="site-footer">
 <div class="container footer-grid">
 <div class="foot-brand">
-<img alt="Logo VideoCaptionStudio" decoding="async" height="28" loading="lazy" src="/images/videocaptionstudio-logo.png" width="140"/>
+<picture><source srcset="/images/videocaptionstudio-logo.webp" type="image/webp"><img alt="Logo VideoCaptionStudio" decoding="async" height="28" loading="lazy" src="/images/videocaptionstudio-logo.png" width="140"/></picture>
 <p>© <span id="year"></span> VideoCaptionStudio — opéré par E-Com Shop.</p>
 <p class="disclosure" data-nosnippet="">Des liens partenaires sponsorisés peuvent nous rémunérer. Les prix, conditions et durées de cookies peuvent évoluer selon les régions et périodes.</p>
 <p class="sitemap-links">
@@ -178,7 +178,7 @@
 <!-- Badge affiliation (masqué via CSS) -->
 <p aria-hidden="true" class="aff-badge" data-nosnippet="">Site partenaire non officiel CapCut.</p>
 </footer>
-<!-- GA4 : injecté après consentement par /assets/main.js -->
+<!-- GA4 : injecté après consentement par /assets/main.min.js -->
 <template id="ga4-template">
 <!-- Google tag (gtag.js) — injecter APRÈS consentement -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-C5YHHXL9DL"></script>
@@ -190,6 +190,6 @@
     </script>
 </template>
 <!-- JS principal -->
-<script defer="" src="/assets/main.js"></script>
+<script defer="" src="/assets/main.min.js"></script>
 </body>
 </html>

@@ -29,7 +29,7 @@
 <link href="//i.ytimg.com" rel="dns-prefetch"/>
 <link href="//www.youtube-nocookie.com" rel="dns-prefetch"/>
 <!-- Styles -->
-<link href="/assets/styles.css" rel="stylesheet"/>
+<link href="/assets/styles.min.css" rel="stylesheet"/>
 <!-- Favicons / Manifest -->
 <link href="/images/favicon.ico" rel="icon" sizes="any"/>
 <link href="/images/favicon.svg" rel="icon" type="image/svg+xml"/>
@@ -124,7 +124,7 @@
 <header class="site-header" data-header="">
 <div class="container header-grid">
 <a aria-label="VideoCaptionStudio Home" class="brand" href="/">
-<img alt="VideoCaptionStudio logo" decoding="async" height="32" src="/images/videocaptionstudio-logo.png" width="168"/>
+<picture><source srcset="/images/videocaptionstudio-logo.webp" type="image/webp"><img alt="VideoCaptionStudio logo" decoding="async" height="32" src="/images/videocaptionstudio-logo.png" width="168"/></picture>
 </a>
 <button aria-controls="site-nav" aria-expanded="false" class="nav-toggle">
 <span class="sr-only">Open menu</span>
@@ -223,7 +223,7 @@
 <footer class="site-footer">
 <div class="container footer-grid">
 <div class="foot-brand">
-<img alt="VideoCaptionStudio logo" decoding="async" height="28" loading="lazy" src="/images/videocaptionstudio-logo.png" width="140"/>
+<picture><source srcset="/images/videocaptionstudio-logo.webp" type="image/webp"><img alt="VideoCaptionStudio logo" decoding="async" height="28" loading="lazy" src="/images/videocaptionstudio-logo.png" width="140"/></picture>
 <p>© <span id="year"></span> VideoCaptionStudio — operated by E-Com Shop.</p>
 <p class="disclosure" data-nosnippet="">Sponsored partner links may earn us a commission. Prices, conditions and cookie durations can change over time and by region.</p>
 <p class="sitemap-links">
@@ -243,7 +243,7 @@
 </div>
 <p aria-hidden="true" class="aff-badge" data-nosnippet="">Non-official CapCut partner site.</p>
 </footer>
-<!-- GA4 template (injected after consent by /assets/main.js) -->
+<!-- GA4 template (injected after consent by /assets/main.min.js) -->
 <template id="ga4-template">
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-C5YHHXL9DL"></script>
 <script>
@@ -253,6 +253,6 @@
       gtag('config', 'G-C5YHHXL9DL', { anonymize_ip: true });
     </script>
 </template>
-<script defer="" src="/assets/main.js"></script>
+<script defer="" src="/assets/main.min.js"></script>
 </body>
 </html>
