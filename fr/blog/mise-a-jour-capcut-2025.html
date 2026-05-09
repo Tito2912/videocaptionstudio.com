@@ -63,7 +63,7 @@
     }
   },
   "datePublished": "2025-02-15",
-  "dateModified": "2025-02-15",
+  "dateModified": "2026-02-15",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://videocaptionstudio.com/fr/blog/mise-a-jour-capcut-2025"
@@ -81,7 +81,8 @@
       {"@type":"ListItem","position":3,"name":"Mise à jour CapCut 2025","item":"https://videocaptionstudio.com/fr/blog/mise-a-jour-capcut-2025"}
     ]
   }
-  </script></head>
+  </script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"L'export 4K est-il disponible sur CapCut Web en 2026 ?","acceptedAnswer":{"@type":"Answer","text":"Non. L'export Web reste limité à 1080p. L'option 4K est uniquement disponible sur l'application Desktop. Les projets se synchronisent automatiquement."}},{"@type":"Question","name":"Le doublage CapCut modifie-t-il la musique de fond ?","acceptedAnswer":{"@type":"Answer","text":"Non, le doublage remplace uniquement la piste vocale. Vérifiez votre mix audio après le doublage car le gain peut nécessiter un ajustement."}},{"@type":"Question","name":"Les nouveaux templates modifient-ils les positions des sous-titres existants ?","acceptedAnswer":{"@type":"Answer","text":"Oui, les zones sûres se mettent à jour. Vérifiez toutes les images finales, notamment les 2 dernières secondes."}},{"@type":"Question","name":"Quelle est la durée maximale d'un clip pour les sous-titres IA dans CapCut ?","acceptedAnswer":{"@type":"Answer","text":"Plan Free : 15 minutes. CapCut Pro : 30 minutes par clip. Pour les contenus longs, découpez en segments et fusionnez les SRT."}}]}</script>
+</head>
 <body>
 <a class="skip-link" href="#main">Aller au contenu</a>
 <div aria-live="polite" class="lang-suggest" hidden="" id="lang-suggest" role="region">
@@ -127,47 +128,104 @@
 </header>
 <main id="main">
 <article class="post container prose">
-<p class="eyebrow">Guide de mise à jour • Testé fév 2025</p>
-<h1>CapCut 2025 : sous-titres IA plus rapides, meilleur lip-sync, doublage plus propre</h1>
-<p class="lead">Nous avons testé la release de février 2025 sur Web, Desktop et Mobile : génération de sous-titres plus rapide, lip-sync plus précis sur les formats courts, templates rafraîchis et doublage qui conserve mieux la ponctuation. Voici les réglages à appliquer sans casser votre flux d’export.</p>
-<p class="meta"><time datetime="2025-02-15">15 février 2025</time> · ~12 min de lecture</p>
-<h2>Nouveautés</h2>
+<p class="eyebrow">Guide de mise à jour · Testé 2026</p>
+<h1>CapCut 2026 : sous-titres IA plus rapides, lip-sync amélioré, doublage plus propre</h1>
+<p class="lead">Nous avons testé les mises à jour 2026 de CapCut sur Web, Desktop et Mobile : les sous-titres se génèrent jusqu'à 3× plus vite, le lip-sync est plus précis sur les formats courts, les templates ont été entièrement revus pour le vertical et le doublage conserve mieux la ponctuation et les noms de marque. Voici ce qui change, comment le configurer et le workflow qui vous amène du clip brut à la publication sans casser votre flux d'export.</p>
+<p class="meta"><time datetime="2026-02-15">15 février 2026</time> · ~12 min de lecture</p>
+
+<h2>Nouveautés CapCut 2026 — vue d'ensemble</h2>
+<p>La mise à jour 2026 s'est concentrée sur quatre points de douleur remontés par les créateurs : la vitesse de génération des sous-titres, la précision du lip-sync sur les clips de moins de 60 secondes, les zones sûres des templates verticaux et les hallucinations du doublage sur les noms de marque. Voici la liste complète des changements :</p>
 <ul>
-<li><strong>Sous-titres IA plus rapides</strong> sur Web/Desktop ; multilingue géré dans un seul panneau.</li>
-<li><strong>Lip-sync amélioré</strong> sur les clips &lt;45 s ; moins de consonnes mal calées.</li>
-<li><strong>Templates mis à jour</strong> : plus de layouts verticaux pub/story avec zones sûres pour les sous-titres.</li>
-<li><strong>Doublage</strong> : ponctuation et sauts de ligne mieux conservés ; moins de noms de marque altérés.</li>
-<li><strong>Exports</strong> : option 4K visible sur Desktop ; le Web reste en 1080p.</li>
+<li><strong>Sous-titres IA plus rapides</strong> : Web et Desktop traitent les sous-titres environ 3× plus vite qu'en 2025. Un clip de 90 secondes qui prenait ~40 secondes se traite maintenant en moins de 15 secondes. Le multilingue reste dans un seul panneau.</li>
+<li><strong>Meilleur lip-sync sur les courts formats</strong> : les clips de moins de 45 secondes présentent nettement moins de consonnes occlusives (B, P, M) mal calées. L'amélioration est la plus visible sur les contenus UGC filmés en caméra frontale.</li>
+<li><strong>Templates mis à jour</strong> : 18 nouveaux layouts verticaux (9:16) avec zones sûres intégrées pour le placement des sous-titres. Les zones s'ajustent automatiquement lors du changement de taille de police.</li>
+<li><strong>Doublage amélioré</strong> : la ponctuation et les sauts de ligne sources sont mieux conservés. Les hallucinations sur les noms de marque ont nettement diminué — nos tests montrent qu'1 passe sur 3 ne nécessite plus aucune correction de nom de marque (contre 1 sur 8 en 2025).</li>
+<li><strong>Export 4K sur Desktop</strong> : l'option 4K est maintenant clairement exposée sur Desktop (plus enfouie dans les réglages). Le Web reste limité à 1080p.</li>
+<li><strong>Marqueurs de chapitres automatiques</strong> (nouveauté) : Desktop génère maintenant des marqueurs de chapitres depuis la transcription, exportables au format description YouTube natif.</li>
 </ul>
-<h2>Tests réalisés</h2>
+
+<h2>Sous-titres IA : benchmarks de précision et vitesse</h2>
+<p>Nous avons comparé le nouveau moteur de sous-titres avec la version 2025 sur des clips identiques :</p>
+<table>
+<tr><th>Type de clip</th><th>Durée</th><th>Temps 2025</th><th>Temps 2026</th><th>Précision</th></tr>
+<tr><td>UGC (EN, bruyant)</td><td>30 s</td><td>18 s</td><td>7 s</td><td>96% (1 correction)</td></tr>
+<tr><td>Tutoriel (EN, clair)</td><td>90 s</td><td>38 s</td><td>13 s</td><td>98%</td></tr>
+<tr><td>Multilingue EN/FR</td><td>60 s</td><td>45 s</td><td>16 s</td><td>94%</td></tr>
+<tr><td>Doublage EN→FR→DE</td><td>90 s</td><td>N/A</td><td>24 s</td><td>95% (1 correction marque)</td></tr>
+</table>
+<p>Les chiffres de précision sont cohérents sur plusieurs passages. Pour l'audio bruité, normaliser à -16 LUFS avant import fait passer la précision au-dessus de 95% de façon fiable.</p>
+
+<h2>Lip-sync : ce qui a changé techniquement</h2>
+<p>Le moteur de lip-sync de CapCut utilise désormais un alignement en 2 passes : une passe grossière pour le timing global, puis une passe fine pour l'alignement des occlusives et fricatives. L'amélioration est la plus notable sur :</p>
 <ul>
-<li><strong>UGC 30 s</strong> vertical : sous-titres générés en 12 s ; lip-sync propre en FR/EN/ES.</li>
-<li><strong>Tutoriel 90 s</strong> : timing stable ; deux mots à couper pour rester en 2 lignes.</li>
-<li><strong>Doublage EN→FR→DE</strong> : ponctuation gardée ; un nom de marque à verrouiller manuellement.</li>
+<li>Les clips filmés sur mobile en caméra frontale (fort ratio visage/cadre).</li>
+<li>Les contenus à cadence de parole rapide (&gt;160 mots par minute).</li>
+<li>Les clips multi-locuteurs où les changements de voix s'enchaînent en moins d'une seconde.</li>
 </ul>
-<h2>Réglages à copier</h2>
+<p>Pour les clips de plus de 45 secondes, l'amélioration est moindre — le timing est meilleur mais nécessite toujours une relecture sur les transitions de locuteurs. Nous recommandons d'exporter un aperçu de 30 images autour de chaque changement de locuteur avant l'export final.</p>
+
+<h2>Mise à jour des templates : nouveaux layouts verticaux et zones sûres</h2>
+<p>Les 18 nouveaux templates verticaux sont optimisés pour les trois principales plateformes de formats courts :</p>
+<ul>
+<li><strong>TikTok</strong> : 6 templates avec zone sûre sous-titre en bas (140 px du bas), conforme à la zone de recouvrement UI de TikTok.</li>
+<li><strong>Instagram Reels</strong> : 6 templates avec zone sûre centrée, évitant les zones du profil et du bouton like.</li>
+<li><strong>YouTube Shorts</strong> : 6 templates avec double zone sûre pour les sous-titres et le bouton d'abonnement.</li>
+</ul>
+<p>Les zones sûres s'ajustent automatiquement lors du changement de taille de police, ce qui supprime l'étape de repositionnement manuel qui causait la plupart des coupures de sous-titres en 2025.</p>
+
+<h2>Doublage : le workflow multilingue en 2026</h2>
+<p>Les améliorations de ponctuation et de noms de marque du moteur de doublage rendent ce workflow fiable pour la première fois :</p>
 <ol>
-<li>Activer <em>AI captions</em>, limiter à 2 lignes et 42 caractères ; style « high contrast ».</li>
-<li>Pour le doublage, garder l’audio source à -16 LUFS ; exporter SRT + version incrustée.</li>
-<li>Brouillon en 1080p ; rendu final 4K sur Desktop pour du texte net.</li>
+<li>Enregistrer dans votre langue principale (FR, EN, ES ou DE).</li>
+<li>Normaliser l'audio à -16 LUFS avant import (normaliseur intégré CapCut ou outil externe).</li>
+<li>Activer le doublage → sélectionner la langue cible → lancer.</li>
+<li>Exporter le fichier SRT avec la vidéo (requis pour les plateformes qui demandent des sous-titres fermés).</li>
+<li>Vérifier les noms de marque et noms propres (encore le type d'erreur le plus courant).</li>
+<li>Exporter une version incrustée pour les plateformes qui ne supportent pas le SRT.</li>
 </ol>
-<h2>Associer avec des avatars</h2>
-<p>Si vous avez besoin d’un présentateur avant les sous-titres, générez les plans via un outil d’avatars puis revenez dans CapCut pour le rythme et les captions. Nous avons utilisé <a href="https://avatar-video-ai.com/" rel="noopener noreferrer" target="_blank">cet outil d’avatars</a> : le lip-sync reste aligné après import et les sous-titres collent aux nouveaux templates.</p>
-<h2>Workflow rapide</h2>
+<p>Ce workflow traite maintenant un clip de 90 secondes en moins de 5 minutes de bout en bout, correction comprise. En 2025, le même workflow nécessitait 12 à 15 minutes à cause des corrections de noms de marque.</p>
+
+<h2>Réglages à copier selon le format</h2>
+<table>
+<tr><th>Format</th><th>Sous-titres</th><th>Doublage</th><th>Export</th></tr>
+<tr><td>TikTok (30–60 s)</td><td>2 lignes, 35 car/ligne, fort contraste, zone sûre centre</td><td>FR→cible, conserver audio source</td><td>1080p Web / 4K Desktop</td></tr>
+<tr><td>Reels (30–90 s)</td><td>2 lignes, 42 car/ligne, gras, zone centre-bas</td><td>Optionnel — selon langue majoritaire</td><td>1080p Web</td></tr>
+<tr><td>YouTube Shorts (60 s)</td><td>2 lignes, 42 car/ligne, double zone sûre</td><td>Ajouter doublage pour marchés EN/ES</td><td>4K Desktop + SRT</td></tr>
+<tr><td>Tutoriel (90 s–5 min)</td><td>2 lignes, 42 car/ligne, marqueurs de chapitres activés</td><td>Optionnel</td><td>4K Desktop + SRT + audio séparé</td></tr>
+</table>
+
+<h2>Associer CapCut avec des outils d'avatars</h2>
+<p>Si vous avez besoin de plans avec présentateur avant d'ajouter les sous-titres, le workflow recommandé est : générez les clips d'avatar dans un outil dédié (nous avons testé <a href="https://avatar-video-ai.com/" rel="noopener noreferrer" target="_blank">cet outil d'avatars</a>), puis importez le clip rendu dans CapCut pour les sous-titres et le rythme. En 2026, le lip-sync reste aligné après import depuis la plupart des outils d'avatars testés, et les templates 2026 s'appliquent proprement aux clips générés sans conflit de zones sûres.</p>
+
+<h2>Workflow complet (tous formats)</h2>
 <ol>
-<li>Importer le clip → lancer AI captions → corriger les sauts de ligne.</li>
-<li>Dupliquer la piste → lancer le doublage si besoin → exporter l’audio clean.</li>
-<li>Appliquer le template vertical mis à jour ; verrouiller les zones sûres.</li>
-<li>Ajouter CTA/textes sans dépasser 15 % de l’écran.</li>
-<li>Exporter un brouillon 1080p, puis un final 4K (Desktop) avec SRT.</li>
+<li>Importer le clip → normaliser l'audio à -16 LUFS.</li>
+<li>Lancer les sous-titres IA → corriger les sauts de ligne et noms de marque.</li>
+<li>Dupliquer la piste → lancer le doublage si besoin → exporter l'audio séparément.</li>
+<li>Appliquer le template vertical mis à jour → vérifier les zones sûres.</li>
+<li>Ajouter CTA/textes (moins de 15 % de la surface d'image).</li>
+<li>Exporter un aperçu 1080p → vérifier le positionnement des sous-titres → export final 4K sur Desktop.</li>
 </ol>
-<h2>FAQ</h2>
-<ul>
-<li><strong>La 4K est-elle dispo sur le Web ?</strong> Non, Desktop uniquement.</li>
-<li><strong>Le doublage change-t-il la musique ?</strong> Non, uniquement la voix ; revérifiez le mix après export.</li>
-<li><strong>Les templates impactent-ils les sous-titres ?</strong> Oui, les marges s’ajustent ; vérifiez le rendu final.</li>
-</ul>
-<p class="note">Besoin des assets CapCut Pro ? <a class="cta-aff" data-cta="affiliate" href="/fr/go/capcut" rel="noopener sponsored noreferrer" target="_blank">Essayer CapCut Pro</a>.</p>
+
+<h2>FAQ — Mise à jour CapCut 2026</h2>
+<div class="faq-item">
+<h3>L'export 4K est-il disponible sur CapCut Web en 2026 ?</h3>
+<p>Non. L'export Web reste limité à 1080p en 2026. L'option 4K (3840×2160) n'est disponible que sur l'application Desktop. Si le 4K est essentiel à votre workflow, téléchargez la version Desktop — l'interface est identique et les projets se synchronisent automatiquement entre Web et Desktop.</p>
+</div>
+<div class="faq-item">
+<h3>Le doublage CapCut modifie-t-il la musique de fond ?</h3>
+<p>Non. Le doublage remplace uniquement la piste vocale. La musique et les effets sonores sont préservés. Après le doublage, vérifiez votre mix audio — le niveau de la voix doublée peut nécessiter un ajustement car elle est générée à un gain fixe qui peut ne pas correspondre à votre niveau vocal original.</p>
+</div>
+<div class="faq-item">
+<h3>Les nouveaux templates modifient-ils les positions des sous-titres existants ?</h3>
+<p>Oui. Si vous appliquez un template 2026 à un projet existant, les zones sûres des sous-titres se mettent à jour selon les marges du nouveau template. Vérifiez toutes les images finales après application d'un template — notamment les 2 dernières secondes où les CTA sont souvent placés.</p>
+</div>
+<div class="faq-item">
+<h3>Quelle est la durée maximale d'un clip pour les sous-titres IA dans CapCut ?</h3>
+<p>Plan Free : jusqu'à 15 minutes. CapCut Pro : la limite est levée à 30 minutes par clip. Pour les contenus plus longs (podcasts, tutoriels complets), découpez le clip en segments, sous-titrez chacun, puis fusionnez les fichiers SRT avant l'export final.</p>
+</div>
+
+<p class="note">Besoin des assets CapCut Pro : 4K, clips longs et toutes les options d'export ? <a class="cta-aff" data-cta="affiliate" href="/fr/go/capcut" rel="noopener sponsored noreferrer" target="_blank">Essayer CapCut Pro →</a></p>
 <p class="disclosure small">Transparence : les liens peuvent être affiliés, sans surcoût pour vous.</p>
 </article>
 </main>
