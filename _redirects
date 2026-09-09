@@ -52,4 +52,3 @@ https://www.videocaptionstudio.com/*      https://videocaptionstudio.com/:splat 
 
 # 3) (Optional) Handle stray double slashes
 # //anything -> /anything
-//:splat                                   /:splat                                   301!
